@@ -1,0 +1,327 @@
+/* SGA — styles communs (formulaires, résultats actions, navigation) */
+:root {
+  --sga-bg: #f0f5fb;
+  --sga-card: #ffffff;
+  --sga-primary: #1e90ff;
+  --sga-primary-dark: #156cc7;
+  --sga-nav-bg: #87cefa;
+  --sga-text: #0f172a;
+  --sga-muted: #64748b;
+  --sga-border: #cbd5e1;
+  --sga-success-bg: #dcfce7;
+  --sga-success-text: #14532d;
+  --sga-error-bg: #fee2e2;
+  --sga-error-text: #991b1b;
+  --sga-radius: 12px;
+  --sga-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.sga-page {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--sga-text);
+  background: var(--sga-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.sga-header {
+  background: var(--sga-primary);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(30, 144, 255, 0.35);
+}
+
+.sga-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sga-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.sga-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.sga-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  transition: background 0.15s ease;
+}
+
+.sga-nav a:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.sga-nav a.sga-nav-out {
+  background: rgba(15, 23, 42, 0.25);
+}
+
+.sga-wrap {
+  flex: 1;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.sga-card {
+  background: var(--sga-card);
+  border-radius: var(--sga-radius);
+  box-shadow: var(--sga-shadow);
+  padding: 24px;
+}
+
+.sga-title {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  color: var(--sga-text);
+}
+
+.sga-lead {
+  margin: 0 0 20px;
+  color: var(--sga-muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.sga-form label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--sga-text);
+}
+
+.sga-form label:first-of-type {
+  margin-top: 0;
+}
+
+.sga-form input[type="text"],
+.sga-form input[type="number"],
+.sga-form input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--sga-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sga-form input:focus {
+  outline: none;
+  border-color: var(--sga-primary);
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.25);
+}
+
+.sga-form input::placeholder {
+  color: #94a3b8;
+}
+
+.sga-actions {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sga-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.sga-btn:active {
+  transform: scale(0.98);
+}
+
+.sga-btn-primary {
+  background: var(--sga-primary);
+  color: #fff;
+}
+
+.sga-btn-primary:hover {
+  background: var(--sga-primary-dark);
+}
+
+.sga-btn-secondary {
+  background: #e2e8f0;
+  color: var(--sga-text);
+}
+
+.sga-btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+.sga-alert {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.sga-alert-success {
+  background: var(--sga-success-bg);
+  color: var(--sga-success-text);
+  border: 1px solid #86efac;
+}
+
+.sga-alert-error {
+  background: var(--sga-error-bg);
+  color: var(--sga-error-text);
+  border: 1px solid #fca5a5;
+}
+
+.sga-footer {
+  margin-top: auto;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--sga-muted);
+  background: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid var(--sga-border);
+}
+
+.sga-footer p {
+  margin: 0;
+}
+
+/* Page accueil grille cartes */
+.sga-accueil-main {
+  max-width: 960px;
+}
+
+.sga-menu-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (min-width: 520px) {
+  .sga-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sga-menu-grid a {
+  display: block;
+  padding: 16px 18px;
+  background: var(--sga-card);
+  border-radius: var(--sga-radius);
+  box-shadow: var(--sga-shadow);
+  text-decoration: none;
+  color: var(--sga-primary-dark);
+  font-weight: 700;
+  border: 1px solid var(--sga-border);
+  transition: border-color 0.15s ease, transform 0.05s ease;
+}
+
+.sga-menu-grid a:hover {
+  border-color: var(--sga-primary);
+  transform: translateY(-1px);
+}
+
+.sga-lead-spaced {
+  margin-top: 28px;
+}
+
+.sga-menu-grid-accent a {
+  border-color: var(--sga-primary);
+  background: linear-gradient(180deg, #eff6ff 0%, var(--sga-card) 100%);
+}
+
+.sga-consult-block {
+  margin-bottom: 24px;
+}
+
+.sga-subtitle {
+  margin: 28px 0 12px;
+  font-size: 1.1rem;
+  color: var(--sga-primary-dark);
+  border-bottom: 2px solid var(--sga-nav-bg);
+  padding-bottom: 6px;
+}
+
+.sga-muted-text {
+  color: var(--sga-muted);
+  font-size: 0.95rem;
+  margin: 8px 0 0;
+}
+
+.sga-table-wrap {
+  overflow-x: auto;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--sga-border);
+}
+
+.sga-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: var(--sga-card);
+}
+
+.sga-table th,
+.sga-table td {
+  border-bottom: 1px solid var(--sga-border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sga-table th {
+  background: #eff6ff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sga-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.sga-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+.sga-consult-block code {
+  font-size: 0.85em;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}

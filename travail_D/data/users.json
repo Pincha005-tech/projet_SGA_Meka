@@ -1,0 +1,17 @@
+{
+    "admin": {
+        "username": "admin",
+        "password_hash": "$2y$10$4vIzjig4V1Xz1Ghb7wavxOVDsd80\/LZOZxGLKX\/81MFll8iwCLwRe",
+        "role": "apparitorat"
+    },
+    "Bradley": {
+        "username": "Bradley",
+        "password_hash": "$2y$12$LtnFtbDOfSd8IFFqctwRJuJdFFlpcZLSBKsozqTw5RaqqAMSF7qI2",
+        "role": "apparitorat"
+    },
+    "Princesse": {
+        "username": "Princesse",
+        "password_hash": "$2y$12$/zZqBK3GFYG4hTyP/MRotuBNETm2T2Q2VgKrI3YyQ9BlIW41oMSIO",
+        "role": "apparitorat"
+    }
+}

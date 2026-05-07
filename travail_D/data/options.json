@@ -1,0 +1,15 @@
+{
+  "L3": [
+    { "id": "L3-OPT-SEC", "libelle": "Sécurité Informatique", "promotion": "L3", "effectif": 35 },
+    { "id": "L3-OPT-ROB", "libelle": "Robotique", "promotion": "L3", "effectif": 30 },
+    { "id": "L3-OPT-DATA", "libelle": "Data Science", "promotion": "L3", "effectif": 25 },
+    { "id": "L3-OPT-RES", "libelle": "Réseaux", "promotion": "L3", "effectif": 20 }
+  ],
+  "L4": [
+    { "id": "L4-Option-Sécurité", "libelle": "Sécurité Informatique", "promotion": "L4", "effectif": 15 },
+    { "id": "L4-Option-Robotique", "libelle": "Robotique", "promotion": "L4", "effectif": 12 },
+    { "id": "L4-Option-DataScience", "libelle": "Data Sciences", "promotion": "L4", "effectif": 18 },
+    { "id": "L4-Option-RES", "libelle": "Réseaux", "promotion": "L4", "effectif": 15 },
+    { "id": "L4-Option-IL", "libelle": "Ingénerie Logicielle", "promotion": "L4", "effectif": 10 }
+  ]
+}

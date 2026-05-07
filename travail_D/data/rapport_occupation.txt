@@ -1,0 +1,6 @@
+Salle AUD-L1 : 11 occupés, 0 libres, taux = 100 %
+Salle AUD-L2 : 11 occupés, 0 libres, taux = 100 %
+Salle AUD-L3 : 11 occupés, 0 libres, taux = 100 %
+Salle AUD-L4 : 11 occupés, 0 libres, taux = 100 %
+Salle SALLE-MACH : 9 occupés, 2 libres, taux = 81.818181818182 %
+Salle SALLE-MGT : 8 occupés, 3 libres, taux = 72.727272727273 %

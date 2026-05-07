@@ -1,0 +1,8 @@
+{
+  "AUD-L1": { "designation": "Auditoire principal – Licence 1", "capacite": 600 },
+  "AUD-L2": { "designation": "Auditoire principal – Licence 2", "capacite": 500 },
+  "AUD-L3": { "designation": "Auditoire principal – Licence 3", "capacite": 350 },
+  "AUD-L4": { "designation": "Auditoire principal – Licence 4", "capacite": 100 },
+  "SALLE-MACH": { "designation": "Salle de machines (TP informatiques)", "capacite": 30 },
+  "SALLE-MGT": { "designation": "Salle de management & marketing", "capacite": 50 }
+}

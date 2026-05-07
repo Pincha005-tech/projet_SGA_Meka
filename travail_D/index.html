@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Page d'entrée publique (sans PHP). Les formulaires et le planning passent par login.php et les pages .php du dossier. -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil - Gestion des Auditoires</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #87cefa;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #1e90ff;
+    }
+    /* Menu hamburger */
+    .menu-toggle {
+      display: none;
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+      }
+      nav ul.showing {
+        display: block;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 20px;
+      width: 100%;
+      max-width: 340px;
+    }
+    .btn-login {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      background: #1e90ff;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Application Web - Gestion des Auditoires</h1>
+    <p>Université Protestante au Congo - FASI</p>
+  </header>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+  <nav>
+    <ul id="menu">
+      <li><a href="login.php">Connexion (formulaires après login)</a></li>
+      <li><a href="formulaires/form_salle.php">Ajouter une salle</a></li>
+      <li><a href="formulaires/form_promotion.php">Ajouter une promotion</a></li>
+      <li><a href="formulaires/form_cours.php">Ajouter un cours</a></li>
+      <li><a href="index.php">Voir le planning</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Bienvenue 👋</h2>
+      <p>Utilisez le menu pour gérer les salles, promotions, cours et options.</p>
+      <a class="btn-login" href="login.php">Accéder à l'application</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Gestion des Auditoires | FASI - UPC</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("showing");
+    }
+  </script>
+</body>
+</html>

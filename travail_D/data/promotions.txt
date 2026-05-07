@@ -1,0 +1,1 @@
+a:5:{s:2:"L1";a:1:{s:8:"effectif";i:75;}s:2:"L2";a:1:{s:8:"effectif";i:90;}s:2:"L3";a:1:{s:8:"effectif";i:110;}s:2:"L4";a:1:{s:8:"effectif";i:60;}s:13:"L3 Ingenierie";a:1:{s:8:"effectif";i:85;}}
